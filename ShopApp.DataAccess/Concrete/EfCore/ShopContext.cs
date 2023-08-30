@@ -12,7 +12,7 @@ namespace ShopApp.DataAccess.Concrete.EfCore
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB:Database=ShopDb;intergrated securtiy=true;");
         }
 
         public DbSet<Product> Products { get; set; }

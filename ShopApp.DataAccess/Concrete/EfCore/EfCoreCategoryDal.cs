@@ -9,11 +9,8 @@ using System.Threading.Tasks;
 
 namespace ShopApp.DataAccess.Concrete.EfCore
 {
-    public class EfCoreProductDal : EfCoreGenericRepository<Product, ShopContext>, IProductDAL
+    public class EfCoreCategoryDal : EfCoreGenericRepository<Category,ShopContext>,ICategoryDAL
     {
-        public IEnumerable<Product> GetPopularProducts()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
